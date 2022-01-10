@@ -49,3 +49,7 @@ path/to/source> npm run test-watch
 ```
 
 When watching for tests changes, the new coverage files are generated always accessible from `coverage/lcov-report/index.html`
+
+## Note
+
+After compiling the solution with `npm run build`, the entry file for the application `index.html` will be modified to include the script bundle. Any further build or `npm run start` command will duplicate the include of the bundle.
